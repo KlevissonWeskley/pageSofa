@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #D9CDF7;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botao-girar{
+  position: absolute; 
+  min-height: 230px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#sofa{
+  width: 500px;
+}
+
+.botao-360{
+  cursor: pointer;
+  transition: 0.3s ease; 
+}
+
+.botao-360:hover{
+  transform: scale(1.10);
+}
+
+.botao-x{
+  display: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.botao-x:hover{
+  transform: scale(1.10);
+}
+
+.textos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.codigo{
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: #271A45;
+}
+
+.titulo{
+  color: #271A45;
+}
+
+.valor{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #271A45;
+}
+
+.btn-compra{
+  color: #271A45;
+  background: transparent;
+  border: 1px solid #271A45;
+  border-radius: 99px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 168px;
+  height: 42px;
+  cursor: pointer;
+  transition: 0.3s ease;
+} 
+
+.btn-compra:hover{
+  background: #271A45;
+  color: #D9CDF7;
+  transform: scale(1.10);
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
